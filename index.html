@@ -102,7 +102,12 @@
             min-width: 100%; display: flex; align-items: center;
         }
         .hero-slide .container { padding-top: 100px; padding-bottom: 80px; min-height: 750px; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; }
-        .hero-text-block { max-width: 520px; text-align: left; }
+        
+        /* Updated Hero Font Size for readability */
+        .hero-text-block { max-width: 550px; text-align: left; }
+        .hero-text-block h1 { font-size: clamp(45px, 8vw, 85px); }
+        .hero-text-block p { margin: 20px 0; font-size: 24px; color: rgba(255,255,255,0.95); font-weight: 600; line-height: 1.4; }
+
         .slider-dots {
             position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%);
             display: flex; gap: 10px; z-index: 10;
@@ -328,6 +333,7 @@
             h2 { font-size: clamp(24px, 7vw, 36px); }
             .hero-slide .container { min-height: 400px; padding-top: 20px; padding-bottom: 30px; align-items: flex-start; justify-content: flex-end; }
             .hero-text-block { max-width: 100%; }
+            .hero-text-block p { font-size: 16px !important; line-height: 1.5; }
             .bio-text { font-size: 16px; }
             .motto { font-size: 24px; padding: 20px; border-radius: 60px; }
             .how-sec { padding: 50px 0; margin: 20px 0; }
@@ -352,8 +358,7 @@
             .whatsapp-cta p { font-size: 20px; }
             .sidebar-drawer { width: 80vw; max-width: 270px; }
             .about-photo img { max-width: 260px; }
-            .hero-slide h1 { font-size: clamp(22px, 6vw, 30px); letter-spacing: -0.5px; }
-            .hero-slide p { font-size: 13px !important; }
+            .hero-slide h1 { font-size: clamp(28px, 6vw, 36px); letter-spacing: -0.5px; }
             .hero-text-block .btn { padding: 13px 22px; font-size: 13px; }
             .slider-arrows button { width: 30px; height: 30px; font-size: 12px; background: rgba(255,255,255,0.35); color: #fff; }
             footer { padding: 40px 0; }
@@ -366,93 +371,6 @@
             .contact-details { flex-direction: column; align-items: center; }
         }
     </style>
-    <script type="application/ld+json">
-    [
-    {
-        "@context": "https://schema.org",
-        "@type": ["PhysicalTherapy", "LocalBusiness", "MedicalBusiness"],
-        "name": "Dr. Priyanka's Physiotherapy Clinic",
-        "alternateName": ["Dr. Priyanka Singh Physiotherapy", "Priyanka Physiotherapy Clinic Mangalore"],
-        "description": "Specialist Women's Health Physiotherapy Clinic in Mangalore with 17+ years of experience. Expert in Pregnancy Care, Postnatal Rehab, Obesity Treatment, Menopause, Arthritis, PCOS/PCOD, Pelvic Floor Dysfunction, Vertigo, and more.",
-        "url": "https://drpriyankaphysio.com",
-        "telephone": "+919019457655",
-        "image": "https://drpriyankaphysio.com/hero1.png",
-        "logo": "https://drpriyankaphysio.com/hero1.png",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Balamatta Complex, 2nd Floor, Opposite Juice Junction, Bridge Road, Balmatta",
-            "addressLocality": "Mangalore",
-            "addressRegion": "Karnataka",
-            "postalCode": "575002",
-            "addressCountry": "IN"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "12.8726",
-            "longitude": "74.8328"
-        },
-        "openingHoursSpecification": [
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "17:00"}
-        ],
-        "priceRange": "$$",
-        "currenciesAccepted": "INR",
-        "paymentAccepted": "Cash, UPI",
-        "medicalSpecialty": "Physical Therapy",
-        "hasMap": "https://maps.google.com/?q=Dr.+Priyanka%27s+Physiotherapy+Clinic+Balmatta+Mangalore",
-        "sameAs": ["https://wa.me/919019457655"],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+919019457655",
-            "contactType": "Customer Service",
-            "availableLanguage": ["English", "Hindi", "Kannada", "Tulu", "Konkani"]
-        },
-        "founder": {
-            "@type": "Physician",
-            "name": "Dr. Priyanka Singh",
-            "jobTitle": "Specialist Physical Therapist",
-            "description": "Specialist Physical Therapist with 17+ years of experience in Women's Health Physiotherapy",
-            "worksFor": {"@type": "Organization", "name": "Dr. Priyanka's Physiotherapy Clinic"}
-        },
-        "availableService": [
-            {"@type": "MedicalTherapy", "name": "Pregnancy Care Physiotherapy Mangalore"},
-            {"@type": "MedicalTherapy", "name": "Postnatal and Post Delivery Rehabilitation"},
-            {"@type": "MedicalTherapy", "name": "Obesity and Weight Loss Treatment Mangalore"},
-            {"@type": "MedicalTherapy", "name": "Menopause and Bone Health Treatment"},
-            {"@type": "MedicalTherapy", "name": "Arthritis of Knee and Shoulder Physiotherapy"},
-            {"@type": "MedicalTherapy", "name": "Vertigo Rehabilitation Mangalore"},
-            {"@type": "MedicalTherapy", "name": "Lower Back Pain Treatment Mangalore"},
-            {"@type": "MedicalTherapy", "name": "Pelvic Floor Dysfunction Treatment"},
-            {"@type": "MedicalTherapy", "name": "PCOS PCOD Physiotherapy Mangalore"},
-            {"@type": "MedicalTherapy", "name": "Post Surgical Rehabilitation"},
-            {"@type": "MedicalTherapy", "name": "Neuro Rehabilitation Mangalore"},
-            {"@type": "MedicalTherapy", "name": "Cancer Survivor Rehabilitation"},
-            {"@type": "MedicalTherapy", "name": "Stress and Depression Management"},
-            {"@type": "MedicalTherapy", "name": "Chronic Disorders Physiotherapy"}
-        ],
-        "review": [
-            {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Sneha R."}, "reviewBody": "Dr. Priyanka helped me recover from my postpartum back pain within weeks. Her personalized exercise plan was easy to follow and very effective."},
-            {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Divya M."}, "reviewBody": "I was struggling with PCOS and weight gain for years. The treatment plan with diet and exercise really helped regulate my cycle."},
-            {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Lakshmi K."}, "reviewBody": "After my knee surgery, Dr. Priyanka's rehab program got me back on my feet. She is very patient and knowledgeable."}
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "5",
-            "bestRating": "5"
-        }
-    },
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {"@type": "Question", "name": "Who is the best physiotherapist for women in Mangalore?", "acceptedAnswer": {"@type": "Answer", "text": "Dr. Priyanka Singh (PT) is a Specialist Physical Therapist in Mangalore with 17+ years of experience in Women's Health Physiotherapy, located at Balmatta, Mangalore."}},
-            {"@type": "Question", "name": "What conditions does Dr. Priyanka Singh treat?", "acceptedAnswer": {"@type": "Answer", "text": "Dr. Priyanka Singh treats Pregnancy Care, Postpartum Recovery, Obesity & Weight Loss, Menopause, Arthritis, PCOS/PCOD, Pelvic Floor Dysfunction, Vertigo, Lower Back Pain, Neuro Rehab, and more."}},
-            {"@type": "Question", "name": "Where is Dr. Priyanka's Physiotherapy Clinic in Mangalore?", "acceptedAnswer": {"@type": "Answer", "text": "The clinic is located at Balamatta Complex, 2nd Floor, Opposite Juice Junction, Bridge Road, Balmatta, Mangalore 575002."}},
-            {"@type": "Question", "name": "How can I book an appointment with Dr. Priyanka Singh?", "acceptedAnswer": {"@type": "Answer", "text": "You can book an appointment via WhatsApp at +91 90194 57655 or fill the online form on the website. The clinic is open Monday to Saturday, 10:00 AM to 5:00 PM."}}
-        ]
-    }
-    ]
-    </script>
 </head>
 <body>
 
@@ -497,10 +415,8 @@
 
     <!-- HERO SLIDER -->
     <section class="hero-slider">
-        <!-- Fixed background - does not slide -->
-        <img class="hero-bg-fixed" src="hero1.png" alt="Dr. Priyanka Singh Physiotherapist Mangalore Best Women's Health Physiotherapy Clinic Balmatta Mangalore">
+        <img class="hero-bg-fixed" src="hero1.png" alt="Dr. Priyanka Singh Physiotherapist Mangalore">
         <div class="hero-overlay"></div>
-        <!-- Only text slides -->
         <div class="hero-text-track-wrap">
             <div class="hero-slides" id="heroSlides">
                 <!-- Slide 1 -->
@@ -508,7 +424,7 @@
                     <div class="container">
                         <div class="hero-text-block">
                             <h1 style="color: #fff;">Innovative Care</h1>
-                            <p style="margin: 15px 0; font-size: 20px; color: rgba(255,255,255,0.92); font-weight:600;">Specialist Physical Therapist with <strong>17+ years of experience</strong> helping women stay moving and improve their quality of life.</p>
+                            <p>Specialist Physical Therapist with <strong>17+ years of experience</strong> helping women stay moving and improve their quality of life.</p>
                             <div style="display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap;">
                                 <a href="#book" class="btn btn-black">Plan Your Visit</a>
                                 <a href="#services" class="btn" style="border: 2px solid #fff; color: #fff; background: transparent;">Our Services &rarr;</a>
@@ -521,7 +437,7 @@
                     <div class="container">
                         <div class="hero-text-block">
                             <h1 style="color: #fff;">Women's Health</h1>
-                            <p style="margin: 15px 0; font-size: 20px; color: rgba(255,255,255,0.92); font-weight:600;">Comprehensive physiotherapy solutions for Pregnancy, Obesity, Menopause, Arthritis, and more. Personalized care in a comfortable environment.</p>
+                            <p>Comprehensive physiotherapy solutions for Pregnancy, Obesity, Menopause, Arthritis, and more. Personalized care in a comfortable environment.</p>
                             <div style="display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap;">
                                 <a href="#book" class="btn btn-black">Plan Your Visit</a>
                                 <a href="#services" class="btn" style="border: 2px solid #fff; color: #fff; background: transparent;">Our Services &rarr;</a>
@@ -571,6 +487,31 @@
         <p>Book your consultation in seconds via WhatsApp</p>
         <a href="https://wa.me/919019457655" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp Now</a>
     </div>
+
+    <!-- WHY CHOOSE (MOVED HERE) -->
+    <section class="why-sec">
+        <div class="container">
+            <h2>Why Choose Dr. Priyanka's <span class="highlight">Physiotherapy Clinic</span></h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-award"></i></div>
+                    <h4>17+ Years of Experience</h4>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-user-friends"></i></div>
+                    <h4>Work One-on-One</h4>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-clock"></i></div>
+                    <h4>No-Rush Appointment</h4>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Comfortable & Confidential</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- HOW DOES MY TREATMENT WORK -->
     <section class="how-sec">
@@ -807,7 +748,7 @@
 
     <!-- Pregnancy Card -->
     <div class="advance-card" onclick="toggleAdvance(this)">
-        <img class="advance-photo" src="ac1.webp" alt="Pregnancy and Postnatal Physiotherapy Care in Mangalore">
+        <img class="advance-photo" src="priyankapregnancy.jpeg" alt="Pregnancy and Postnatal Physiotherapy">
         <div class="advance-header">
             <h3>Pregnancy &amp; Postnatal Care</h3>
             <span class="advance-toggle">+</span>
@@ -823,7 +764,7 @@
 
     <!-- Obesity Card -->
     <div class="advance-card" onclick="toggleAdvance(this)">
-        <img class="advance-photo" src="ad2.jpg" alt="Obesity and Weight Loss Physiotherapy Treatment Mangalore">
+        <img class="advance-photo" src="priyankaobesity.jpeg" alt="Obesity and Weight Loss">
         <div class="advance-header">
             <h3>Obesity &amp; Weight Loss Treatment</h3>
             <span class="advance-toggle">+</span>
@@ -842,7 +783,7 @@
 
     <!-- Menopause Card -->
     <div class="advance-card" onclick="toggleAdvance(this)">
-        <img class="advance-photo" src="ac3.webp" alt="Menopause and Bone Health Physiotherapy Mangalore">
+        <img class="advance-photo" src="priyankahands.jpeg" alt="Menopause and Bone Health">
         <div class="advance-header">
             <h3>Menopause &amp; Bone Health</h3>
             <span class="advance-toggle">+</span>
@@ -860,7 +801,7 @@
 
     </div><!-- end advance-cards-wrap -->
 
-    <!-- PATIENT REVIEWS (with slider) -->
+    <!-- PATIENT REVIEWS -->
     <section id="reviews" class="reviews-sec">
         <div class="container">
             <h2><span class="highlight">Testimonials</span></h2>
@@ -887,20 +828,6 @@
                             <div class="reviewer">&mdash; Lakshmi K.</div>
                         </div>
                     </div>
-                    <div class="reviews-slide">
-                        <div class="review-card">
-                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p>"I came to Dr. Priyanka during my menopause phase with severe joint pain and low energy. Her treatment plan with exercises and lifestyle changes made a huge difference. I feel stronger and more active now!"</p>
-                            <div class="reviewer">&mdash; Anitha S.</div>
-                        </div>
-                    </div>
-                    <div class="reviews-slide">
-                        <div class="review-card">
-                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p>"Dr. Priyanka's approach to treating my chronic lower back pain was outstanding. The one-on-one sessions and personalized care made me feel comfortable and confident throughout my recovery journey."</p>
-                            <div class="reviewer">&mdash; Rashmi P.</div>
-                        </div>
-                    </div>
                 </div>
                 <div class="reviews-nav">
                     <button onclick="reviewSlide(-1)"><i class="fas fa-chevron-left"></i></button>
@@ -910,14 +837,12 @@
                     <span class="active" onclick="goToReview(0)"></span>
                     <span onclick="goToReview(1)"></span>
                     <span onclick="goToReview(2)"></span>
-                    <span onclick="goToReview(3)"></span>
-                    <span onclick="goToReview(4)"></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- MYTH VS FACT (slider, below testimonials) -->
+    <!-- MYTH VS FACT -->
     <section class="myth-sec">
         <div class="container">
             <h2>Myth vs <span class="highlight">Fact</span></h2>
@@ -925,53 +850,18 @@
                 <div class="myth-slides" id="mythSlides">
                     <div class="myth-slide">
                         <div class="myth-poster">
-                            <img src="ps1.jpeg" alt="Myth vs Fact - Thyroid & Exercise">
+                            <img src="ps1.jpeg" alt="Myth vs Fact">
                         </div>
                     </div>
                     <div class="myth-slide">
                         <div class="myth-poster">
-                            <img src="ps2.jpeg" alt="Myth vs Fact - Diabetes & Exercise">
-                        </div>
-                    </div>
-                    <div class="myth-slide">
-                        <div class="myth-poster">
-                            <img src="ps3.jpeg" alt="Myth vs Fact - Exercise & Conception">
+                            <img src="ps2.jpeg" alt="Myth vs Fact">
                         </div>
                     </div>
                 </div>
                 <div class="myth-nav">
                     <button onclick="mythSlideNav(-1)"><i class="fas fa-chevron-left"></i></button>
                     <button onclick="mythSlideNav(1)"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="myth-dots" id="mythDots">
-                    <span class="active" onclick="goToMyth(0)"></span>
-                    <span onclick="goToMyth(1)"></span>
-                    <span onclick="goToMyth(2)"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY CHOOSE -->
-    <section class="why-sec">
-        <div class="container">
-            <h2>Why Choose Dr. Priyanka's <span class="highlight">Physiotherapy Clinic</span></h2>
-            <div class="why-grid">
-                <div class="why-card">
-                    <div class="why-icon"><i class="fas fa-award"></i></div>
-                    <h4>17+ Years of Experience</h4>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon"><i class="fas fa-user-friends"></i></div>
-                    <h4>Work One-on-One</h4>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon"><i class="fas fa-clock"></i></div>
-                    <h4>No-Rush Appointment</h4>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h4>Comfortable & Confidential</h4>
                 </div>
             </div>
         </div>
@@ -990,13 +880,6 @@
                     <i class="fas fa-phone-alt"></i>
                     <span>+91 90194 57655</span>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-clock"></i>
-                    <span>Mon &ndash; Sat: 10:00 AM &ndash; 5:00 PM | Sunday: Holiday</span>
-                </div>
-            </div>
-            <div style="text-align: center; margin-bottom: 25px;">
-                <a href="https://wa.me/919019457655" class="whatsapp-btn" style="font-size:15px; padding:14px 30px;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
             </div>
             <div class="map-section">
                 <iframe width="100%" height="100%" frameborder="0" src="https://maps.google.com/maps?q=Dr.%20Priyanka's%20Physiotherapy%20Clinic%20Balmatta&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
@@ -1004,17 +887,13 @@
         </div>
     </section>
 
-    <!-- BOOKING - WHITE -->
+    <!-- BOOKING -->
     <section id="book" class="book-sec">
         <div class="container plan-visit-wrapper">
             <div>
                 <h2 style="text-align:left; color:#000; font-size:60px;">Plan Your Visit.</h2>
                 <p style="margin: 20px 0; color:#555;">Call or WhatsApp us for instant confirmation.</p>
-                <p style="color: var(--deep-purple); font-weight: 900; font-size: 32px; margin: 20px 0; white-space: nowrap;"><i class="fas fa-phone-alt" style="font-size:24px; margin-right:8px;"></i>+91 90194 57655</p>
-                <div style="font-size: 14px; color:#666; line-height: 1.8;">
-                    <i class="fas fa-clock" style="margin-right:5px;"></i>Mon &ndash; Sat: 10:00 AM &ndash; 5:00 PM<br>
-                    <i class="fas fa-calendar-times" style="margin-right:5px;"></i>Sunday: Holiday
-                </div>
+                <p style="color: var(--deep-purple); font-weight: 900; font-size: 32px; margin: 20px 0;"><i class="fas fa-phone-alt"></i> +91 90194 57655</p>
                 <a href="https://wa.me/919019457655" class="book-whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
             </div>
             <div class="visit-form-grid">
@@ -1026,18 +905,6 @@
                     <option>Pregnancy Care</option>
                     <option>Post Delivery Rehab</option>
                     <option>Arthritis Treatment</option>
-                    <option>Vertigo Rehab</option>
-                    <option>Upper Back Pain Rehab</option>
-                    <option>Lower Back Pain Treatment</option>
-                    <option>Weight Loss / Obesity</option>
-                    <option>Post Surgical Rehab</option>
-                    <option>Neuro Rehab</option>
-                    <option>Stress & Depression Management</option>
-                    <option>Pelvic Floor Dysfunction</option>
-                    <option>Menopause & Bone Health</option>
-                    <option>Cancer Survivor Rehab</option>
-                    <option>Chronic Disorders Treatment</option>
-                    <option>Infertility</option>
                 </select>
                 <input type="date" id="v_date" required>
                 <textarea id="v_help" rows="4" placeholder="How can we help?"></textarea>
@@ -1049,16 +916,10 @@
     <footer style="padding: 60px 0; text-align: center; border-top: 1px solid #eee; background:#E8D5E8;">
         <div class="logo">Dr. Priyanka's Physiotherapy Clinic</div>
         <p style="margin-top: 20px; font-weight: 700; color:#4b0082;">Member of Balmatta Medical Association *</p>
-        <p style="margin-top: 10px; font-size: 12px; color: #aaa;">Powered by LuMe Studios</p>
         <p style="margin-top: 40px; color: #aaa; font-size: 11px;">&copy; 2026 Dr. Priyanka Singh. All Rights Reserved.</p>
     </footer>
 
     <script>
-        // Force scroll to top on refresh
-        window.onbeforeunload = function () { window.scrollTo(0, 0); };
-        if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
-        window.onload = function() { window.scrollTo(0, 0); };
-
         function openSidebar() {
             document.getElementById('sidebarDrawer').classList.add('open');
             document.getElementById('sidebarOverlay').classList.add('open');
@@ -1068,7 +929,6 @@
             document.getElementById('sidebarOverlay').classList.remove('open');
         }
 
-        // Hero Slider (manual only - no auto-slide)
         let heroIndex = 0;
         const heroSlides = document.getElementById('heroSlides');
         const heroDots = document.querySelectorAll('.slider-dots span');
@@ -1086,60 +946,32 @@
             updateHeroSlider();
         }
 
-        // Service expandable
-        function toggleService(el) {
-            el.classList.toggle('open');
-        }
+        function toggleService(el) { el.classList.toggle('open'); }
+        function toggleAdvance(el) { el.classList.toggle('open'); }
+        function toggleHow(el) { el.classList.toggle('open'); }
 
-        // Advance care expandable
-        function toggleAdvance(el) {
-            el.classList.toggle('open');
-        }
-
-        // How works expandable
-        function toggleHow(el) {
-            el.classList.toggle('open');
-        }
-
-        // Myth Slider
         let mythIndex = 0;
         const mythSlides = document.getElementById('mythSlides');
-        const mythDots = document.querySelectorAll('#mythDots span');
-
-        function updateMythSlider() {
-            mythSlides.style.transform = `translateX(-${mythIndex * 100}%)`;
-            mythDots.forEach((d, i) => d.classList.toggle('active', i === mythIndex));
-        }
         function mythSlideNav(dir) {
-            mythIndex = (mythIndex + dir + 3) % 3;
-            updateMythSlider();
+            mythIndex = (mythIndex + dir + 2) % 2;
+            mythSlides.style.transform = `translateX(-${mythIndex * 100}%)`;
         }
-        function goToMyth(i) {
-            mythIndex = i;
-            updateMythSlider();
-        }
-        // Auto-slide myth
-        setInterval(() => mythSlideNav(1), 4000);
 
-        // Reviews Slider
         let reviewIndex = 0;
         const reviewsSlides = document.getElementById('reviewsSlides');
         const reviewsDots = document.querySelectorAll('#reviewsDots span');
-
         function updateReviewSlider() {
             reviewsSlides.style.transform = `translateX(-${reviewIndex * 100}%)`;
             reviewsDots.forEach((d, i) => d.classList.toggle('active', i === reviewIndex));
         }
         function reviewSlide(dir) {
-            reviewIndex = (reviewIndex + dir + 5) % 5;
+            reviewIndex = (reviewIndex + dir + 3) % 3;
             updateReviewSlider();
         }
         function goToReview(i) {
             reviewIndex = i;
             updateReviewSlider();
         }
-        // Auto-slide reviews
-        setInterval(() => reviewSlide(1), 5000);
 
         function sendToVisitWA() {
             const name = document.getElementById('v_name').value;
@@ -1150,10 +982,9 @@
 
             if(!name || !phone) { alert("Please fill Name and Phone."); return; }
 
-            const message = `*Plan Your Visit - Dr. Priyanka Singh*%0A--------------------------%0APatient: ${name}%0APhone: ${phone}%0AService: ${service}%0ADate: ${date}%0AConcern: ${help}%0A--------------------------%0AHi, I'd like to book an appointment.`;
+            const message = `*Booking Request*%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0ADate: ${date}%0AHelp: ${help}`;
             window.open(`https://wa.me/919019457655?text=${message}`, '_blank');
         }
     </script>
-
 </body>
 </html>
